@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="640.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fichier">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleNew" text="Nouveau" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Ouvrir..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Enregistrer..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Enregistrer sous..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Quitter" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Statistiques">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleShowBirthdayStatistics" text="Voir statistiques" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Edition">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Supprimer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="à propos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
